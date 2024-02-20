@@ -42,9 +42,9 @@ Split and merge HSV Image
 ### i) Read and display the image
 ```python
 import cv2
-image=cv2.imread('lion.jpg',1)
+image=cv2.imread('pig.jpg',1)
 image=cv2.resize(image,(400,300))
-cv2.imshow('Lion-Sathish',image)
+cv2.imshow('Piggy-Friends',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
@@ -54,7 +54,7 @@ cv2.destroyAllWindows()
 ### ii)Write the image
 ```python
 import cv2
-image=cv2.imread('lion.jpg',0)
+image=cv2.imread('pig.jpg',0)
 cv2.imwrite('test.jpg',image)
 ```
 
@@ -65,7 +65,7 @@ cv2.imwrite('test.jpg',image)
 ### iii)Shape of the Image
 ```python
 import cv2
-image=cv2.imread('lion.jpg',1)
+image=cv2.imread('pig.jpg',1)
 print(image.shape)
 ```
 #### Output:
@@ -75,7 +75,7 @@ print(image.shape)
 ```python
 import random
 import cv2
-image=cv2.imread('lion.jpg',1)
+image=cv2.imread('pig.jpg',1)
 image=cv2.resize(image,(400,400))
 for i in range (150,200):
     for j in range(image.shape[1]):
@@ -95,7 +95,7 @@ cv2.destroyAllWindows()
 ### v)Cut and paste portion of image
 ```python
 import cv2
-image=cv2.imread('lion.jpg',1)
+image=cv2.imread('pig.jpg',1)
 image=cv2.resize(image,(400,400))
 tag =image[150:200,110:160]
 image[110:160,150:200] = tag
@@ -111,7 +111,7 @@ cv2.destroyAllWindows()
 ### vi) BGR and RGB to HSV and GRAY
 ```python
 import cv2
-img = cv2.imread('lion.jpg',1)
+img = cv2.imread('pig.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 
@@ -138,7 +138,7 @@ cv2.destroyAllWindows()
 ### vii) HSV to RGB and BGR
 ```python
 import cv2
-img = cv2.imread('lion.jpg')
+img = cv2.imread('pig.jpg')
 img = cv2.resize(img,(300,200))
 
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -162,7 +162,7 @@ cv2.destroyAllWindows()
 
 ```python
 import cv2
-img = cv2.imread('lion.jpg')
+img = cv2.imread('pig.jpg')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 
@@ -183,7 +183,7 @@ cv2.destroyAllWindows()
 ### ix) Split and merge RGB Image
 ```python
 import cv2
-img = cv2.imread('lion.jpg',1)
+img = cv2.imread('pig.jpg',1)
 img = cv2.resize(img,(300,200))
 
 R = img[:,:,2]
@@ -207,7 +207,7 @@ cv2.destroyAllWindows()
 ### x) Split and merge HSV Image
 ```python
 import cv2
-img = cv2.imread("lion.jpg",1)
+img = cv2.imread("pig.jpg",1)
 img = cv2.resize(img,(200,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
